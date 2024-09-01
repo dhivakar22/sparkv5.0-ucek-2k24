@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark v5.0 - National Level Technical Symposium</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="particles-js"></div>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h1 class="nav-heading">Spark v5.0</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="navItem1" style="color: #ffffff" href="#homeSection" onclick="showSection('homeSection')">HOME</a>
+            <a class="nav-link" style="color: #ffffff" href="#eventSection" id="navItem2">EVENTS</a>
+            <a class="nav-link" style="color: #ffffff" href="#aboutSection" id="navItem3">ABOUT</a>
+            <a class="nav-link" style="color: #ffffff" href="#contactSection" id="navItem4">CONTACT</a>
+            <a class="nav-link" style="color: #ffffff" href="" id="navItem5">BROCHURE</a>
+            <a class="nav-button" href="https://forms.gle/6KXBXJXYcnoEgffP9" target="_blank">REGISTER</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="app-container">
+      <div class="home-container mt-5" id="homeSection">
+        <h1 class="home-heading mt-5 mb-2">Spark v5.0</h1>
+        <p class="home-para">A National Level Technical Symposium</p>
+
+        <marquee direction="right" style="color: yellow"> DATE : <strong> 13th September 2024 </strong> </marquee>
+
+        <p class="home-para2">Presented By</p>
+        <p class="home-para2 ml-4 mr-4">
+          Association of Computer Science and Engineering <br />
+          University College of Engineering, Kancheepuram
+        </p>
+        <h2 class="home-para2 ml-2 mr-2">!!Stay Tuned, Follow our Social Media Handles!! The Waiting is Gone End!! Register Soon !!</h2>
+        <div id="timer"></div>
+        <a class="home-button" href="https://forms.gle/6KXBXJXYcnoEgffP9" target="_blank">REGISTER</a>
+        <p class="home-para2 ml-3 mr-3 mt-3">NOTE%: Registration Closes on 11th September 2024</p>
+      </div>
+
+      <div class="events-container" id="eventSection">
+        <h1>EVENTS</h1>
+        <div class="card-container">
+          <div class="card">
+            <i class="fas fa-laptop-code card-icon"></i>
+            <h2 class="card-heading">TECHNICAL EVENTS</h2>
+            <p class="card-paragraph">Technical events includes Paper Presentation, Debugging, Snippet, Tech Quiz. It is to enhance the indepth technical skills of the upcoming engineers that can provoke an enlightenment to the other engineers of our era.</p>
+            <a href="#technicalEvent" onclick="showSection('technicalEvent')" class="card-link" id="techEventsLink">About More -></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-music card-icon"></i>
+            <h2 class="card-heading">NON-TECHNICAL EVENTS</h2>
+            <p class="card-paragraph">There other non-technical events compresses of Design-O-Mania, Gamer Zone, FI-CON , Picturesque. It not only boost up the energy of the students in enjoying the events, but would even catch to the needs of their future in their career life.</p>
+            <a href="#nonTechnicalEvent" onclick="showSection('nonTechnicalEvent')" class="card-link" id="nonTechEventsLink">About More -></a>
+          </div>
+        </div>
+
+        <div class="card-container" id="aboutSection">
+          <div class="card">
+            <i class="fas fa-lightbulb card-icon"></i>
+            <h2 class="card-heading">ABOUT SYMPOSIUM</h2>
+            <p class="card-paragraph">Spark v5.0 is an annual tech-fest hosted by the Computer Science and Engineering department of University College of Engineering, Kanchipuram. We have a range of activities and challenges that are both fun and educational for all geeks out there. It is a combination of both, fun and technology.</p>
+            <a href="#eventSection" class="card-link">About More -></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-university card-icon"></i>
+            <h2 class="card-heading">ABOUT COLLEGE</h2>
+            <p class="card-paragraph">University College of Engineering Kanchipuram (UCEk) is one of the constituent colleges of Anna University Chennai. It was established in the year 2010. Our Mission is to impart sound engineering knowledge, skills and moral values needed for highly challenging dynamic and global careers.</p>
+            <a href="http://www.aucek.in/" class="card-link">About More -></a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card2">
+            <i class="fas fa-code card-icon"></i>
+            <h2 class="card-heading">
+              <pre> <>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING <> </pre>
+            </h2>
+            <p class="card-paragraph">Computer Science and Engineering (CSE) is an academic programme that integrates the field of Computer Engineering and Computer Science.The course contains a plethora of topics but emphasizes the basics of computer programming and networking. We work with hardware, software and software systems, including the theory, design, development, and implementation of software and software systems. It is a realm of invention and application that always pushes you to accomplish more and there is never enough. This field has a long and storied history and has seen many advancements. From these, we should conclude that computer science is a revolutionary field.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- This is a hidden content start -->
+
+      <!-- THIS IS FOR TECHNICAL EVENT-->
+      <div id="technicalEvent" class="hidden-section">
+        <h1>TECHNICAL EVENTS</h1>
+        <div class="card-container">
+          <div class="card">
+            <i class="fas fa-file-alt card-icon"></i>
+            <h2 class="card-heading">PAPER PRESENTATION</h2>
+            <p class="card-paragraph">Generally a presentation conveys the information from a speaker to an audience.</p>
+            <a href="#paperPresentationRules" onclick="showSection('paperPresentationRules')" class="card-link">Continue Reading -></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-bug card-icon"></i>
+            <h2 class="card-heading">DEBUGGING</h2>
+            <p class="card-paragraph">The process of identifying and removing errors from the given code.</p>
+            <a href="#debuggingRules" onclick="showSection('debuggingRules')" class="card-link">Continue Reading -></a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <i class="fas fa-question-circle card-icon"></i>
+            <h2 class="card-heading">TECH QUIZ</h2>
+            <p class="card-paragraph">As you all know what is meant by Quiz. Isn't it?</p>
+            <a href="#techQuizRules" onclick="showSection('techQuizRules')" class="card-link">Continue Reading -></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-code card-icon"></i>
+            <h2 class="card-heading">WEB DEVELOPMENT</h2>
+            <p class="card-paragraph">To Develop a website for a given topic on spot . Eg: portfolio, E-commerce, etc.,</p>
+            <a href="#webDevelopmentRules" onclick="showSection('webDevelopmentRules')" class="card-link">Continue Reading -></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- THIS IS FOR NON-TECHNICAL EVENT-->
+      <div id="nonTechnicalEvent" class="hidden-section">
+        <h1>NON-TECHNICAL EVENTS</h1>
+        <div class="card-container">
+          <div class="card">
+            <i class="fas fa-camera card-icon"></i>
+            <h2 class="card-heading">PHOTOGRAPHY</h2>
+            <p class="card-paragraph">Capture the world through your lens and showcase your creative vision in our photography competition. Whether it's nature, portraits, or abstract, let your photos tell a story.</p>
+            <a href="#photographyRules" onclick="showSection('photographyRules')" class="card-link">Continue Reading -></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-laugh-beam card-icon"></i>
+            <h2 class="card-heading">MEME CREATION</h2>
+            <p class="card-paragraph">Bring out your humor and creativity in our meme creation contest. Use wit and visuals to craft memes that resonate with the audience and go viral!</p>
+            <a href="#" class="card-link" id="nonTechEventsLink">Continue Reading -></a>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <i class="fas fa-music card-icon"></i>
+            <h2 class="card-heading">START MUSIC</h2>
+            <p class="card-paragraph">Unleash your musical talent in the Start Music event. Whether you're a solo performer or part of a band, entertain the crowd with your rhythm and melodies.</p>
+            <a href="#" class="card-link">Continue Reading -></a>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-gamepad card-icon"></i>
+            <h2 class="card-heading">E-GAMES</h2>
+            <p class="card-paragraph">Dive into the virtual world and compete in thrilling e-games. Show off your gaming skills and strategies to dominate the competition and emerge victorious!</p>
+            <a href="#eGamesRules" onclick="showSection('eGamesRules')" class="card-link">Continue Reading -></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PPT RULES-->
+
+      <div id="paperPresentationRules" class="hidden-section">
+        <h1 class="rules-heading">PAPER PRESENTATION</h1>
+        <p class="rules-para">
+          Generally a presentation conveys the information from a speaker to an audience. <br />Typically a demostration, introduction, lecture or speech on some particular topic.<br />
+          Here, the participants either as a team or as an individual is required to make a paper <br />about a given topic or area, and then present it in front of the juries.
+        </p>
+        <h1 class="rules-heading">RULES</h1>
+        <p class="rules-para">
+          1. A maximum of 2 participants or individual participant per paper is allowed<br />
+          2. Team Leader should create team after completing their registration and can invite their team member<br />
+          3. No participants can be part of more than one team.<br />
+          4. Only registered participants are allowed to participate in the event.<br />
+          5. Each Team will get 10 minutes to present their paper and 5 minutes will be for queries.<br />
+          6. A panel of judges will go through the papers and if you're shortlisted to give the presentation, you'll be notified.<br />
+          7. The decision of the judges will be final and no arguments or appeal will be entertained.<br />
+          8. The Submission of the soft copies can be submitted through mail - tecfizo2k22@gmail.com<br />
+          9. The mail must be with the subject "Paper Presentation".<br />
+          10. For any queries contact student co-ordinators
+        </p>
+        <h1 class="rules-heading">STUDENT CO-ORDINATORS</h1>
+        <div class="card-container2">
+          <div class="card">
+            <h2 class="rules-heading">NAME 1</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+
+          <div class="card">
+            <h2 class="rules-heading">NAME 2</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEBUGGING RULES -->
+
+      <div id="debuggingRules" class="hidden-section">
+        <h1 class="rules-heading">DEBUGGING</h1>
+        <p class="rules-para">
+          The process of identifying and removing errors from the given code. <br />Here, the participants will be engaged in the process of fixing a bug which means they should identified,<br />
+          analyze and remove the error wihtin the given time.
+        </p>
+        <h1 class="rules-heading">RULES</h1>
+        <p class="rules-para">
+          1. A individual participant is allowed. <br />
+          2. C Language is used for debugging.<br />
+          3. Only registered participants are allowed to participate in the event.<br />
+          4. Duration of the event will be 1 hr.<br />
+          5. For any queries contact student co-ordinators.
+        </p>
+        <h1 class="rules-heading">STUDENT CO-ORDINATORS</h1>
+        <div class="card-container2">
+          <div class="card">
+            <h2 class="rules-heading">NAME 1</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+
+          <div class="card">
+            <h2 class="rules-heading">NAME 2</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TECH QUIZ RULES-->
+
+      <div id="techQuizRules" class="hidden-section">
+        <h1 class="rules-heading">TECHNICAL QUIZ</h1>
+        <p class="rules-para">As you all know what is meant by Quiz. Isn't it? An usual quiz event which is oriented with the Core CSE.</p>
+        <h1 class="rules-heading">RULES</h1>
+        <p class="rules-para">
+          1. A individual participant is allowed. <br />
+          2. The event wiil be based on Core CSE papers such as Networking,Data Structure,DBMS,etc<br />
+          3. Only registered participants are allowed to participate in the event.<br />
+          4. Duration of the event will be 1 hr.<br />
+          5. For any queries contact student co-ordinators<br />
+        </p>
+        <h1 class="rules-heading">STUDENT CO-ORDINATORS</h1>
+        <div class="card-container2">
+          <div class="card">
+            <h2 class="rules-heading">NAME 1</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+
+          <div class="card">
+            <h2 class="rules-heading">NAME 2</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+        </div>
+      </div>
+
+      <!--- WEB DEVELOPMENT -->
+
+      <div id="webDevelopmentRules" class="hidden-section">
+        <h1 class="rules-heading">WEB DEVELOPMENT</h1>
+        <p class="rules-para">Participents will be assigned with a problem statement and you are asked to solve it . Its to show off your problem solving ability .</p>
+        <h1 class="rules-heading">RULES</h1>
+        <p class="rules-para">
+          1. A individual participant is allowed <br />
+          2. The event will be based on any desired progrmming language.<br />
+          3. Only registered participants are allowed to participate in the event.<br />
+          4. The participents will be alloted with 3 Problem Statements.<br />
+          4. Duration of the event will be 1 hour and 30 minutes.<br />
+          5. For any queries contact student co-ordinators
+        </p>
+        <h1 class="rules-heading">STUDENT CO-ORDINATORS</h1>
+        <div class="card-container2">
+          <div class="card">
+            <h2 class="rules-heading">NAME 1</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+
+          <div class="card">
+            <h2 class="rules-heading">NAME 2</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHOTOGRAPHY RULES -->
+
+      <div id="photographyRules" class="hidden-section">
+        <h1 class="rules-heading">PHOTOGRAPHY</h1>
+        <p class="rules-para">
+          Photography is a powerful medium of expression that can be used to communicate<br />
+          strong positive messages about a subject. Join us in capturing the appealing <br />
+          moments to make up the spectators' mind.
+        </p>
+        <h1 class="rules-heading">RULES</h1>
+        <p class="rules-para">
+          1. The theme is "Product photography".<br />
+          2. Max 1 entry per person.<br />
+          3. Mobile and DSLR captured images are allowed.<br />
+          4. The entries shouldn't have any watermarks.<br />
+          5. The judging criteria are 50% based on image and 50% on likes.<br />
+          6. Send you image to tecfizo2k22@gmail.com along with your name, department, college name, mobile number and instagram id.<br />
+          7. The Subject of the mail should contain "PICTURESQUE ENTRY"<br />
+          8. Attachment of payment slip along with the mail is compulsary<br />
+          9. Your picture will posted in instagram with in 24hrs , If not kindly notify us.<br />
+          10. Participents should follow our Instagram page for any Updates.<br />
+          11. There should not be any bot or fake likes , If founded the candidate will be disqualified.<br />
+          10. For any queries contact student co-ordinators
+        </p>
+        <h1 class="rules-heading">STUDENT CO-ORDINATORS</h1>
+        <div class="card-container2">
+          <div class="card">
+            <h2 class="rules-heading">NAME 1</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+
+          <div class="card">
+            <h2 class="rules-heading">NAME 2</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEME CREATION RULES -->
+
+      <div id="memeCreationRules" class="hidden-section">
+        <h1 class="rules-heading">MEME CREATION</h1>
+        <p class="rules-para"></p>
+        <h1 class="rules-heading">RULES</h1>
+        <p class="rules-para"></p>
+        <h1 class="rules-heading">STUDENT CO-ORDINATORS</h1>
+        <div class="card-container2">
+          <div class="card">
+            <h2 class="rules-heading">NAME 1</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+
+          <div class="card">
+            <h2 class="rules-heading">NAME 2</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- START MUSIC RULES -->
+
+      <div id="startMusicRules" class="hidden-section">
+        <h1 class="rules-heading">START MUSIC</h1>
+        <p class="rules-para"></p>
+        <h1 class="rules-heading">RULES</h1>
+        <p class="rules-para"></p>
+        <h1 class="rules-heading">STUDENT CO-ORDINATORS</h1>
+        <div class="card-container2">
+          <div class="card">
+            <h2 class="rules-heading">NAME 1</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+
+          <div class="card">
+            <h2 class="rules-heading">NAME 2</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- e GAMES RULES -->
+      <div id="eGamesRules" class="hidden-section">
+        <h1 class="rules-heading">e - GAMES</h1>
+        <p class="rules-para">Garana Free Fire is a multiplayer battle royale game. All participants are <br />put in a custom room and a match is conducted to decide the winners and runner.</p>
+        <h1 class="rules-heading">RULES</h1>
+        <p class="rules-para">
+          1. Solo entry is allowed <br />
+          2. Team formation is strictly not allowed .<br />
+          3. No cheating, no AFKs.<br />
+          4. Only mobile phones are allowed, no Emulators.<br />
+          5. Players must use the FREE FIRE Username provided in the registration form for the tournament. <br />Any change in username should be reported to support at least 4 hours before the match time.<br />
+          6. Players are not allowed to use any 3rd party applications that will enhance or change the default gameplay.<br />
+          7. Avoid using exploits/in-game bugs that could potentially spoil the game environment.<br />
+          8. No commentary or live-streaming of matches in platforms like Youtube or Twitch will be done.<br />
+          9. A spectator will be always present to observe the game.<br />
+          10. For any queries contact student co-ordinators
+        </p>
+        <h1 class="rules-heading">STUDENT CO-ORDINATORS</h1>
+        <div class="card-container2">
+          <div class="card">
+            <h2 class="rules-heading">NAME 1</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+
+          <div class="card">
+            <h2 class="rules-heading">NAME 2</h2>
+            <p class="rules-para">CONTACT:</p>
+            <p class="rules-para">MOBILE</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- This is a hidden content end -->
+
+      <div class="office-barriers-container">
+        <h1>OFFICE BARRIERS</h1>
+        <div class="card-container">
+          <div class="card">
+            <h2 class="card-heading">CHIEF PATRON</h2>
+            <p>Dr. R. Velraj</p>
+            <p>Vice-Chancellor</p>
+          </div>
+
+          <div class="card">
+            <h2 class="card-heading">PATRONS</h2>
+            <p class="card-paragraph">Dr. G. Ravikumar</p>
+            <p class="card-paragraph">Registrar</p>
+            <p class="card-paragraph">Dr. S. Moorthy Babu</p>
+            <p class="card-paragraph">Additional Register</p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <h2 class="card-heading">CONVENOR</h2>
+            <p>JD</p>
+            <p>JD</p>
+          </div>
+
+          <div class="card">
+            <h2 class="card-heading">ORGANIZING SECRETARY</h2>
+            <p class="card-paragraph">.</p>
+            <p class="card-paragraph">.</p>
+            <p class="card-paragraph">.</p>
+            <p class="card-paragraph">.</p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <h2 class="card-heading">CO-ORDINATORS</h2>
+            <p></p>
+            <h2 class="card-heading">CO-COORDINATOR</h2>
+          </div>
+
+          <div class="card">
+            <h2 class="card-heading">EXECUTIVE MEMBERS</h2>
+          </div>
+        </div>
+
+        <div id="contactSection">
+          <footer class="footer-section">
+            <div class="footer-item">
+              <h1 class="footer-heading">Spark v5.0</h1>
+            </div>
+            <div class="footer-section2">
+              <div class="footer-item">
+                <h1>EVENTS</h1>
+                <p><a>Technical</a></p>
+                <p><a>Non-Technical</a></p>
+              </div>
+              <div class="footer-item">
+                <h1>ABOUT</h1>
+                <p><a>Symposium</a></p>
+                <p><a>Department</a></p>
+                <p><a>College</a></p>
+              </div>
+              <div class="footer-item">
+                <h1>REACH US</h1>
+                <p><a href="mailto:sparkucek@gmail.com" target="_blank">Mail</a></p>
+                <p><a href="https://www.instagram.com/sparkv5.0/" target="_blank">Instagram</a></p>
+                <p><a href="https://wa.me/9655934877" target="_blank">Whatsapp</a></p>
+              </div>
+              <div class="footer-item">
+                <h1>OTHER LINKS</h1>
+                <p><a>Terms and Conditions</a></p>
+                <p><a>Privacy Policy</a></p>
+                <a>Refund Policy</a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <div class="copyright fixed-bottom">
+        <div class="left-text">&copy; 2024 Spark v5.0</div>
+        <div class="center-text">Designed by JD</div>
+        <div class="right-icons">
+          <a href="https://www.instagram.com/sparkv5.0/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:example@mail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      function toggleContent(event) {
+        event.preventDefault()
+
+        var content = document.getElementById("toggleContent")
+        if (content.style.display === "none" || content.style.display === "") {
+          content.style.display = "block"
+        } else {
+          content.style.display = "none"
+        }
+      }
+    </script>
+  </body>
+</html>
